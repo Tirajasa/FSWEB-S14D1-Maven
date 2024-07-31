@@ -1,6 +1,6 @@
 package com.workintech.cylinder;
 
-public class Circle {
+public class Circle{
     private double radius;
 
 
@@ -25,7 +25,7 @@ public class Circle {
         }
 
     }
-    public double getArea(double radius){
-        return radius * radius * Math.PI;
+    public double getArea(){
+        return Math.pow(radius,2)* Math.PI;
     }
 }

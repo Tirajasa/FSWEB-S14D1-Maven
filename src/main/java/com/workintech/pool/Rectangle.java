@@ -5,10 +5,9 @@ public class Rectangle {
     private double length;
 
     public Rectangle(double width,double length){
-
         this.length=length;
         this.width=width;
-        check();
+        check(width, length);
     }
 
     public double getLength() {
@@ -17,15 +16,19 @@ public class Rectangle {
     public double getWidth(){
          return width;
     }
-    public void check(){
+    public void check(double width,double length){
         if(this.length<0){
             this.length=0;
+        }else{
+            this.length=length;
         }
         if(this.width<0){
             this.width=0;
+        }else {
+            this.width = width;
         }
     }
     public double getArea(){
-        return width*length;
+        return this.width*this.length;
     }
 }
